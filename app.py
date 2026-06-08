@@ -253,7 +253,7 @@ def editarIntegrante(id):
 
     return make_response(jsonify(registros))
 
-
+###################################################################### Creacion del metodo de eliminar para integrantes
 @app.route("/integrante/eliminar", methods=["POST"])
 def eliminarIntegrante():
     if not con.is_connected():
